@@ -1,14 +1,18 @@
 import React from 'react';
-import Car from './Car';
+import Myhead from './head';
+import './Mycss.css';
+import styles from './Mycss.module.css'
  
-const titreRouge ={fontSize: '50px', color:'teal'};
 class Form extends React.Component
 {
   render()
-  {
-      return( 
+  {   const condition=this.props.condition;
+
+      return(  
+   
       <div> 
-          <h1 style={titreRouge}> Commentaire </h1>
+          <h1 className={styles.green}> Css with modules </h1>
+          <Myhead/>
           <button> Valider </button>
       </div>);
 
